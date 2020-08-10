@@ -91,8 +91,12 @@
         </properties>
     </rule>
 
-    <!-- <rule ref="Squiz.ControlStructures.ControlSignature" /> -->
+    <!-- Enforces show control signatures are spaced -->
+    <rule ref="Squiz.ControlStructures.ControlSignature" />
     <!-- <rule ref="Generic.ControlStructures.InlineControlStructure"></rule> -->
+
+    <!-- 1 True Brace Style (1TBS)  -->
+    <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
 
     <!-- exclude the actual tests directory from being tested! -->
     <exclude-pattern>*/tests/*</exclude-pattern>
